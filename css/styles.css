@@ -1,0 +1,43 @@
+:root {
+  color-scheme: light;
+  --background: #FAFBF7;
+  --surface: #FFFFFF;
+  --sage: #E4EFDF;
+  --border: #CDDCC7;
+  --text: #25332A;
+  --muted: #526155;
+  --green: #356044;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--background); color: var(--text); font-family: Arial, Helvetica, sans-serif; line-height: 1.6; }
+a { color: var(--green); text-underline-offset: .3em; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid var(--green); outline-offset: 5px; }
+.skip-link { position: absolute; left: 1rem; top: -5rem; padding: .75rem; background: var(--surface); z-index: 2; }
+.skip-link:focus { top: 1rem; }
+.site-header, main, .site-footer { width: min(1080px, calc(100% - 3rem)); margin-inline: auto; }
+.site-header { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding-block: 1.75rem; border-bottom: 1px solid var(--border); }
+.brand { color: var(--text); font-size: 1.1rem; font-weight: 700; text-decoration: none; }
+.brand-dot { color: var(--green); }
+nav { display: flex; gap: 1.75rem; }
+nav a { font-size: .95rem; }
+nav [aria-current="page"] { font-weight: 700; }
+.menu-toggle { background: var(--surface); color: var(--green); border: 1px solid var(--green); border-radius: .4rem; padding: .6rem 1rem; font: inherit; cursor: pointer; }
+.menu-toggle[hidden] { display: none; }
+.hero { padding-block: clamp(4rem, 10vw, 8rem); max-width: 850px; }
+.eyebrow { color: var(--green); text-transform: uppercase; letter-spacing: .16em; font-size: .8rem; font-weight: 700; }
+h1 { font-size: clamp(3rem, 8vw, 6rem); line-height: 1.08; letter-spacing: -.055em; margin: 1.5rem 0 2rem; }
+.name-line { display: block; }
+.intro { font-size: clamp(1.15rem, 2.4vw, 1.5rem); max-width: 620px; color: var(--muted); }
+.welcome { color: var(--muted); }
+.student-note { display: inline-flex; align-items: center; gap: .65rem; margin-top: 1.5rem; padding: .65rem 1rem; background: var(--sage); border-radius: 2rem; font-size: .9rem; }
+.note-dot { width: .5rem; height: .5rem; border-radius: 50%; background: var(--green); }
+.site-footer { display: flex; justify-content: space-between; gap: 1rem; border-top: 1px solid var(--border); padding-block: 1.25rem; color: var(--muted); font-size: .85rem; }
+@media (max-width: 600px) {
+  .site-header { flex-wrap: wrap; gap: 1rem; }
+  .menu-toggle:not([hidden]) { display: inline-block; }
+  nav { width: 100%; flex-direction: column; gap: .25rem; }
+  nav a { padding-block: .6rem; }
+  nav[data-open="false"] { display: none; }
+  .site-footer { flex-wrap: wrap; }
+}
