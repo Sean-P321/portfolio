@@ -7,7 +7,7 @@ Sean Persicano's personal portfolio, built with plain HTML, CSS, and JavaScript.
 Download or clone this repository and double-click `index.html`. No installation or build step is required.
 
 ## Progress
-All five pages (Home, About Me, Projects, Skills, and Contact) share a responsive navigation menu. The Projects page features the SDET 420 Favorite Websites project with its original banner and a live link, plus the Python Currency Exchange Rates notebook on Google Colab. The notebook still needs a project image. One more project is needed for the assignment. The Contact page includes a clickable email link to spp@njit.edu.
+All five pages (Home, About Me, Projects, Skills, and Contact) share a responsive navigation menu. The Projects page features three projects: SDET 420 Favorite Websites, Currency Exchange Rates, and Random Joke Reader. Both Python notebooks are linked on Google Colab and still need project images. The Contact page includes a clickable email link to spp@njit.edu.
 
 ## Assets
 The Favorite Websites project banner is copied from Sean's original NJIT-hosted class website.
