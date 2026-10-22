@@ -41,6 +41,8 @@ h3 { font-size: 1.2rem; line-height: 1.4; }
 .skills-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
 .contact-card { max-width: 680px; }
 .contact-email { overflow-wrap: anywhere; font-size: 1.15rem; }
+.project-card { max-width: 760px; }
+.project-image { display: block; max-width: 100%; height: auto; margin-bottom: 1.5rem; }
 .education-card { min-width: 0; padding: clamp(1.25rem, 3vw, 2rem); background: var(--surface); border: 1px solid var(--border); border-radius: .75rem; }
 .education-card p:not(.eyebrow), .interests > p { color: var(--muted); }
 .interest-list { display: flex; flex-wrap: wrap; gap: .75rem; padding: 0; list-style: none; }

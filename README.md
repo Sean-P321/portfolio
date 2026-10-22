@@ -7,6 +7,9 @@ Sean Persicano's personal portfolio, built with plain HTML, CSS, and JavaScript.
 Download or clone this repository and double-click `index.html`. No installation or build step is required.
 
 ## Progress
-All five pages (Home, About Me, Projects, Skills, and Contact) share a responsive navigation menu. The Projects page is ready for project content and currently displays a coming-soon message. The Contact page includes a clickable email link to spp@njit.edu.
+All five pages (Home, About Me, Projects, Skills, and Contact) share a responsive navigation menu. The Projects page features the SDET 420 Favorite Websites project with its original banner and a live link; two more projects are still needed for the assignment. The Contact page includes a clickable email link to spp@njit.edu.
+
+## Assets
+The Favorite Websites project banner is copied from Sean's original NJIT-hosted class website.
 
 GitHub Pages deployment and the live URL still need verification.
