@@ -7,6 +7,6 @@ Sean Persicano's personal portfolio, built with plain HTML, CSS, and JavaScript.
 Download or clone this repository and double-click `index.html`. No installation or build step is required.
 
 ## Progress
-The Home, About Me, and Skills pages include Sean's introduction, education, interests, programming and web experience, and a shared responsive navigation menu. Projects and Contact will be added as their content is supplied; their navigation links will be added when the pages exist.
+The Home, About Me, Skills, and Contact pages share a responsive navigation menu. The Contact page temporarily displays a clearly labeled placeholder email; it must be replaced with an approved contact method before final submission. Projects will be added when their content is supplied.
 
 GitHub Pages deployment and the live URL still need verification.
