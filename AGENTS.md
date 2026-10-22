@@ -10,7 +10,7 @@ Create five pages with shared navigation linking to all five pages on every page
 - `skills.html`: technical skills and honest proficiency descriptions.
 - `contact.html`: an approved public email address or other approved contact method.
 
-The owner currently requests `portfolio-placeholder@njit.edu` as a temporary email without their real name. Label it clearly as a placeholder and do not make it a mailto link. Replace it with an owner-approved contact method before final submission.
+The owner currently requests `portfolio-placeholder@njit.edu` as a temporary email without their real name. Make it a mailto link so visitors can attempt to email it, but keep a visible warning that it is not the correct address and messages will not reach the owner. Replace it with an owner-approved contact method before final submission.
 
 Ask the owner for missing personal details, project information, screenshots, and contact information when needed. Do not invent credentials, projects, or personal history. Do not leave placeholder text or empty sections in the finished site.
 
