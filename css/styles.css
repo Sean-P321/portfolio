@@ -8,6 +8,16 @@
   --muted: #526155;
   --green: #356044;
 }
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --background: #17201B;
+  --surface: #202D25;
+  --sage: #2E4233;
+  --border: #526957;
+  --text: #EDF3E9;
+  --muted: #BECCBF;
+  --green: #B2D5A7;
+}
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--background); color: var(--text); font-family: Arial, Helvetica, sans-serif; line-height: 1.6; }
 a { color: var(--green); text-underline-offset: .3em; }
@@ -16,13 +26,14 @@ a:hover { text-decoration-thickness: 2px; }
 .skip-link { position: absolute; left: 1rem; top: -5rem; padding: .75rem; background: var(--surface); z-index: 2; }
 .skip-link:focus { top: 1rem; }
 .site-header, main, .site-footer { width: min(1080px, calc(100% - 3rem)); margin-inline: auto; }
-.site-header { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding-block: 1.75rem; border-bottom: 1px solid var(--border); }
+.site-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.5rem; padding-block: 1.75rem; border-bottom: 1px solid var(--border); }
 .brand { color: var(--text); font-size: 1.1rem; font-weight: 700; text-decoration: none; }
 .brand-dot { color: var(--green); }
-nav { display: flex; gap: 1.75rem; }
+nav { display: flex; flex-wrap: wrap; align-items: center; gap: 1.75rem; }
 nav a { font-size: .95rem; }
 nav [aria-current="page"] { font-weight: 700; }
-.menu-toggle { background: var(--surface); color: var(--green); border: 1px solid var(--green); border-radius: .4rem; padding: .6rem 1rem; font: inherit; cursor: pointer; }
+.menu-toggle, .theme-toggle { background: var(--surface); color: var(--green); border: 1px solid var(--green); border-radius: .4rem; padding: .6rem 1rem; font: inherit; cursor: pointer; }
+.theme-toggle[hidden] { display: none; }
 .menu-toggle[hidden] { display: none; }
 .hero { padding-block: clamp(4rem, 10vw, 8rem); max-width: 850px; }
 .eyebrow { color: var(--green); text-transform: uppercase; letter-spacing: .16em; font-size: .8rem; font-weight: 700; }
@@ -53,7 +64,7 @@ h3 { font-size: 1.2rem; line-height: 1.4; }
   .education-grid, .skills-grid { grid-template-columns: 1fr; }
   .site-header { flex-wrap: wrap; gap: 1rem; }
   .menu-toggle:not([hidden]) { display: inline-block; }
-  nav { width: 100%; flex-direction: column; gap: .25rem; }
+  nav { width: 100%; flex-direction: column; align-items: stretch; gap: .25rem; }
   nav a { padding-block: .6rem; }
   nav[data-open="false"] { display: none; }
   .site-footer { flex-wrap: wrap; }

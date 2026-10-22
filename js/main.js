@@ -1,3 +1,33 @@
+const themeButton = document.querySelector('.theme-toggle');
+
+if (themeButton) {
+  // Keep the site usable even when the browser blocks saved preferences.
+  let savedTheme;
+  try {
+    savedTheme = localStorage.getItem('portfolio-theme');
+  } catch (error) {
+    savedTheme = null;
+  }
+
+  function applyTheme(theme) {
+    document.documentElement.dataset.theme = theme;
+    themeButton.setAttribute('aria-pressed', String(theme === 'dark'));
+  }
+
+  applyTheme(savedTheme === 'dark' ? 'dark' : 'light');
+  themeButton.hidden = false;
+
+  themeButton.addEventListener('click', () => {
+    const theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+    applyTheme(theme);
+    try {
+      localStorage.setItem('portfolio-theme', theme);
+    } catch (error) {
+      // The toggle still works for this page if storage is unavailable.
+    }
+  });
+}
+
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#navigation');
 
