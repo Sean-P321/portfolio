@@ -10,6 +10,8 @@ Download or clone this repository and double-click `index.html`. No installation
 All five pages (Home, About Me, Projects, Skills, and Contact) share a responsive navigation menu. The Projects page features three projects: SDET 420 Favorite Websites, Currency Exchange Rates, and Random Joke Reader. Both Python notebooks are linked on Google Colab and still need project images. The Contact page includes a clickable email link to spp@njit.edu.
 
 ## Appearance
+The Random Joke Reader project includes a JavaScript demo that fetches a joke on request and offers a jokes.txt download. It requires an internet connection and displays a retry message if the API is unavailable.
+
 Every page defaults to dark mode and includes a Dark mode toggle in the navigation (inside the Menu on phones). Toggle it to switch between light and dark mode. A saved preference takes priority over the default when browser storage is available.
 
 ## Project assets

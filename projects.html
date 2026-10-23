@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Projects from Sean Persicano's studies and personal work.">
   <title>Projects | Sean Persicano</title>
-  <link rel="stylesheet" href="css/styles.css?v=theme-2">
-  <script src="js/main.js?v=theme-4" defer></script>
+  <link rel="stylesheet" href="css/styles.css?v=joke-1">
+  <script src="js/main.js?v=joke-1" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -48,6 +48,17 @@
         <h3>Random Joke Reader</h3>
         <p>A Python notebook that uses the requests library to retrieve a random joke from an API. It displays the setup and punchline, then saves them to a text file named jokes.txt.</p>
         <a href="https://colab.research.google.com/drive/1gExW-cVsghZFDTyhoH-hiHjzeKo3qYHu?usp=sharing">View Random Joke Reader notebook</a>
+        <section class="joke-demo" aria-labelledby="joke-demo-title">
+          <h4 id="joke-demo-title">Try it here</h4>
+          <p>Get a random joke, then download it as jokes.txt if you like.</p>
+          <button class="joke-button" id="joke-button" type="button" hidden>Get a random joke</button>
+          <div id="joke-output" role="status" aria-live="polite" aria-atomic="true">
+            <p id="joke-setup"></p>
+            <p id="joke-punchline"></p>
+          </div>
+          <a id="joke-download" download="jokes.txt" hidden>Download jokes.txt</a>
+          <noscript><p>Enable JavaScript to try the joke reader here, or open the notebook above.</p></noscript>
+        </section>
       </article>
     </section>
   </main>
