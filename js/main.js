@@ -14,7 +14,7 @@ if (themeButton) {
     themeButton.setAttribute('aria-pressed', String(theme === 'dark'));
   }
 
-  applyTheme(savedTheme === 'dark' ? 'dark' : 'light');
+  applyTheme(savedTheme === 'light' ? 'light' : 'dark');
   themeButton.hidden = false;
 
   themeButton.addEventListener('click', () => {

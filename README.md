@@ -10,7 +10,7 @@ Download or clone this repository and double-click `index.html`. No installation
 All five pages (Home, About Me, Projects, Skills, and Contact) share a responsive navigation menu. The Projects page features three projects: SDET 420 Favorite Websites, Currency Exchange Rates, and Random Joke Reader. Both Python notebooks are linked on Google Colab and still need project images. The Contact page includes a clickable email link to spp@njit.edu.
 
 ## Appearance
-Every page includes a Dark mode toggle in the navigation (inside the Menu on phones). Toggle it again to return to light mode. The preference is remembered when browser storage is available.
+Every page defaults to dark mode and includes a Dark mode toggle in the navigation (inside the Menu on phones). Toggle it to switch between light and dark mode. A saved preference takes priority over the default when browser storage is available.
 
 ## Project assets
 The Favorite Websites project banner is copied from Sean's original NJIT-hosted class website.

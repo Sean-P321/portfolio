@@ -29,7 +29,7 @@ Use this initial design unless the owner requests a change; update this file whe
 - Use relative file paths, including navigation and asset paths. Avoid root-relative paths and features requiring a server, such as fetching local page fragments.
 - Use semantic elements such as `header`, `nav`, `main`, `section`, and `footer`. Use exactly one `h1` per page and a logical heading order.
 - Do not use inline styles. Use media queries for phone and laptop layouts.
-- Implement at least two JavaScript features: a responsive navigation menu that opens and closes, plus an accessible light/dark mode toggle. Keep the code small and understandable. Preserve the subtle green palette in both themes, default to light mode, and remember the visitor's choice when browser storage is available.
+- Implement at least two JavaScript features: a responsive navigation menu that opens and closes, plus an accessible light/dark mode toggle. Keep the code small and understandable. Preserve the subtle green palette in both themes, default to dark mode, and remember the visitor's choice when browser storage is available.
 - Use a real button for the mobile menu, maintain `aria-expanded`, and support keyboard interaction. Keep navigation usable if JavaScript is unavailable.
 - If the owner requests a contact form, label fields, validate valid and invalid input with JavaScript, explain that it cannot send messages, and direct visitors to email. Never claim a message was sent.
 - Keep each image under 500 KB. Add meaningful alt text to informative images and empty alt text to purely decorative images.
