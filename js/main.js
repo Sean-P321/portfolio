@@ -12,6 +12,7 @@ if (themeButton) {
   function applyTheme(theme) {
     document.documentElement.dataset.theme = theme;
     themeButton.setAttribute('aria-pressed', String(theme === 'dark'));
+    themeButton.textContent = theme === 'dark' ? 'Dark mode: ON' : 'Dark mode: OFF';
   }
 
   applyTheme(savedTheme === 'light' ? 'light' : 'dark');
