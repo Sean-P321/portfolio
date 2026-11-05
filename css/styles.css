@@ -57,6 +57,12 @@ h3 { font-size: 1.2rem; line-height: 1.4; }
 .contact-email { overflow-wrap: anywhere; font-size: 1.15rem; }
 .project-card { max-width: 760px; }
 .project-card + .project-card { margin-top: 1.5rem; }
+.project-controls { display: flex; align-items: center; justify-content: space-between; gap: 1rem; max-width: 760px; margin-bottom: 1rem; }
+.project-controls[hidden], .project-card[hidden] { display: none; }
+.project-controls p { margin: 0; text-align: center; color: var(--muted); overflow-wrap: anywhere; }
+.project-arrow { flex-shrink: 0; min-width: 48px; min-height: 48px; background: var(--surface); color: var(--green); border: 1px solid var(--green); border-radius: 50%; font: inherit; font-size: 1.5rem; cursor: pointer; }
+.project-arrow:hover { background: var(--sage); }
+.project-carousel[data-ready] .project-card { margin-top: 0; }
 .project-image { display: block; max-width: 100%; height: auto; margin-bottom: 1.5rem; }
 .education-card { min-width: 0; padding: clamp(1.25rem, 3vw, 2rem); background: var(--surface); border: 1px solid var(--border); border-radius: .75rem; }
 .education-card p:not(.eyebrow), .interests > p { color: var(--muted); }

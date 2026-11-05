@@ -21,6 +21,7 @@ Use this initial design unless the owner requests a change; update this file whe
 - Fonts: a local system sans-serif stack such as `Arial, Helvetica, sans-serif`; no external font dependency.
 - Layout: readable content width, flexible grids, and a single-column layout on small screens. Avoid sideways scrolling.
 - Use consistent headers, footers, spacing, colors, and typography across all pages. Provide visible hover and keyboard focus states.
+- Projects use a manual carousel with left and right buttons that wrap through the projects. Show all projects when JavaScript is unavailable.
 
 ## Implementation rules
 - Use semantic HTML5, one external stylesheet (`css/styles.css`), and external JavaScript (`js/main.js`). Keep images in `images/`.

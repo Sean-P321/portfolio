@@ -66,6 +66,35 @@ if (menuButton && navigation) {
   syncMenu();
 }
 
+const projectCarousel = document.querySelector('.project-carousel');
+
+if (projectCarousel) {
+  const projects = projectCarousel.querySelectorAll('.project-card');
+  const position = document.querySelector('#project-position');
+  let currentProject = 0;
+
+  function showProject(index) {
+    // Wrap around in either direction, like a wheel.
+    currentProject = (index + projects.length) % projects.length;
+    projects.forEach((project, projectIndex) => {
+      project.hidden = projectIndex !== currentProject;
+    });
+    const title = projects[currentProject].querySelector('h3').textContent;
+    position.textContent = `${currentProject + 1} of ${projects.length}: ${title}`;
+  }
+
+  document.querySelector('#previous-project').addEventListener('click', () => {
+    showProject(currentProject - 1);
+  });
+  document.querySelector('#next-project').addEventListener('click', () => {
+    showProject(currentProject + 1);
+  });
+
+  showProject(0);
+  projectCarousel.dataset.ready = 'true';
+  projectCarousel.querySelector('.project-controls').hidden = false;
+}
+
 const jokeButton = document.querySelector('#joke-button');
 
 if (jokeButton) {

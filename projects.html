@@ -28,8 +28,14 @@
       <h1>Projects.</h1>
       <p class="intro">A place to share my class projects and personal work.</p>
     </header>
-    <section aria-labelledby="class-projects-title">
+    <section class="project-carousel" aria-labelledby="class-projects-title">
       <h2 id="class-projects-title">Class projects</h2>
+      <div class="project-controls" hidden>
+        <button class="project-arrow" id="previous-project" type="button" aria-label="Previous project" aria-controls="project-slides">&#8592;</button>
+        <p id="project-position" role="status" aria-live="polite" aria-atomic="true"></p>
+        <button class="project-arrow" id="next-project" type="button" aria-label="Next project" aria-controls="project-slides">&#8594;</button>
+      </div>
+      <div id="project-slides">
       <article class="education-card project-card">
         <img class="project-image" src="images/first-website-banner.png" alt="My First Website banner from the SDET 420 project">
         <p class="eyebrow">SDET 420 · HTML &amp; CSS</p>
@@ -60,6 +66,7 @@
           <noscript><p>Enable JavaScript to try the joke reader here, or open the notebook above.</p></noscript>
         </section>
       </article>
+      </div>
     </section>
   </main>
   <footer class="site-footer"><p>Sean Persicano</p><p>New Jersey</p></footer>
