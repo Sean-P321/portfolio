@@ -20,6 +20,13 @@ The Random Joke Reader project includes a JavaScript demo that fetches and displ
 Every page defaults to dark mode and includes a Dark mode toggle in the navigation (inside the Menu on phones). Toggle it to switch between light and dark mode. A saved preference takes priority over the default when browser storage is available.
 
 ## Project assets
-The Favorite Websites project banner is copied from Sean's original NJIT-hosted class website.
+
+All project images are stored in `images/`:
+
+| Asset | Used for | Source |
+| --- | --- | --- |
+| [first-website-banner.png](images/first-website-banner.png) | Favorite Websites project banner | Copied from Sean's original NJIT-hosted class website. |
+| [currencyExchange.png](images/currencyExchange.png) | Currency Exchange Rates notebook output showing an AUD-to-USD conversion and successful database insertion | Screenshot supplied by Sean. |
+| [joke.png](images/joke.png) | Random Joke Reader notebook output showing a joke setup and punchline | Screenshot supplied by Sean. |
 
 The live URL was verified on November 5, 2026: HTTP 200 with the page title "Sean Persicano | Personal Portfolio".
