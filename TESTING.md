@@ -17,7 +17,7 @@ Run browser cases locally by double-clicking index.html and again on the verifie
 | T11 | No JavaScript | Disable JavaScript and reload every page. | Navigation remains usable; all three projects appear; carousel buttons are hidden. | Pass (owner tested) | Pass (owner tested) |
 | T12 | Images and links | Inspect all images; open project links and contact email. | Images load with useful alt text; links reach intended destinations. | Pass (owner tested) | Pass (owner tested) |
 | T13 | Joke demo | Cycle to Joke Reader; request a joke; repeat offline. | Setup and punchline appear with no download option; failure gives retry text. | Pass (owner tested) | Pass (owner tested) |
-| T14 | Console | Load every page and exercise interactions with console open. | No uncaught errors. | Not run | Not run |
+| T14 | Console | Load every page and exercise interactions with console open. | No uncaught errors. | Pass (owner tested) | Pass (owner tested) |
 | T15 | Accessibility | Run Lighthouse Accessibility on each of the five pages. | Each page scores at least 90; record actual scores. | Not run | Not run |
 | T16 | Carousel in both themes and sizes | Cycle all cards at 375px and 1366px in light and dark modes. | Arrows, status, cards and focus remain visible without overflow. | Pass (owner tested) | Pass (owner tested) |
 
@@ -33,7 +33,8 @@ Run browser cases locally by double-clicking index.html and again on the verifie
 - T10 and T11: Owner confirmed carousel keyboard accessibility and navigation/content without JavaScript passed both locally and live. Recorded on 2026-11-05; these are owner-reported manual results.
 - T12 and T13: Owner confirmed images and links, plus joke demo success, failure, and recovery behavior passed both locally and live. Recorded on 2026-11-05; these are owner-reported manual results.
 - T16: Owner confirmed all carousel cards at phone and laptop widths in both themes passed locally and live. Recorded on 2026-11-05; these are owner-reported manual results.
-- T14 and T15 remain Not run. No connected browser was available for agent testing. No Lighthouse scores claimed.
+- T14: Owner reported no console errors while checking pages and interactions locally and live. Recorded on 2026-11-05; these are owner-reported manual results.
+- T15 remains Not run. No connected browser was available for agent testing. No Lighthouse scores claimed.
 
 Record initial browser failures, fixes, and retest results here when those checks are run.
 
