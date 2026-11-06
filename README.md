@@ -3,6 +3,8 @@ First SDET101 Project
 
 Sean Persicano's personal portfolio, built with plain HTML, CSS, and JavaScript.
 
+Live site: [Sean Persicano's portfolio](https://sean-p321.github.io/portfolio/)
+
 ## View locally
 Download or clone this repository and double-click `index.html`. No installation or build step is required.
 
@@ -20,4 +22,4 @@ Every page defaults to dark mode and includes a Dark mode toggle in the navigati
 ## Project assets
 The Favorite Websites project banner is copied from Sean's original NJIT-hosted class website.
 
-GitHub Pages deployment and the live URL still need verification.
+The live URL was verified on November 5, 2026: HTTP 200 with the page title "Sean Persicano | Personal Portfolio".
