@@ -5,6 +5,10 @@ My personal portfolio, built with plain HTML, CSS, and JavaScript.
 
 Live site: [My portfolio](https://sean-p321.github.io/portfolio/)
 
+## AI assistance
+
+This portfolio was developed with AI assistance from OpenAI Codex, which helped write, edit, and explain the HTML, CSS, JavaScript, and project documentation. I supplied the personal information, project details, and screenshots, directed changes, and manually tested the website locally and live. Test results and the local Lighthouse exception are recorded in `TESTING.md`.
+
 ## View locally
 Download or clone this repository and double-click `index.html`. No installation or build step is required.
 
