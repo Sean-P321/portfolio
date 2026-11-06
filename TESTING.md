@@ -30,3 +30,9 @@ Run browser cases locally by double-clicking index.html and again on the verifie
 - Remaining browser, keyboard, phone/laptop, console, and Lighthouse checks: Not run. No connected browser was available for agent testing. No Lighthouse scores claimed.
 
 Record initial browser failures, fixes, and retest results here when those checks are run.
+
+## Currency Exchange Rates image update (2026-11-05)
+
+- Pass: Inspected the supplied screenshot and confirmed its file size is 44,044 bytes (under 500 KB).
+- Pass: Source review confirms the relative image path appears after the project description and before its notebook link, with meaningful alt text and the existing responsive project-image class.
+- Phone/laptop layout and keyboard checks after this update: Not run; no connected browser was available. T01's owner-reported results above predate this image update.
