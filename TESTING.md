@@ -15,8 +15,8 @@ Run browser cases locally by double-clicking index.html and again on the verifie
 | T09 | Carousel cycling | Click right three times, then left from first project. | Forward cycle returns to first; left from first shows third; titles update. | Pass (owner tested) | Pass (owner tested) |
 | T10 | Carousel keyboard and accessibility | Tab to both arrows; use Enter and Space; inspect focus and screen-reader status. | Buttons retain focus; hidden project links are skipped; current title is announced. | Pass (owner tested) | Pass (owner tested) |
 | T11 | No JavaScript | Disable JavaScript and reload every page. | Navigation remains usable; all three projects appear; carousel buttons are hidden. | Pass (owner tested) | Pass (owner tested) |
-| T12 | Images and links | Inspect all images; open project links and contact email. | Images load with useful alt text; links reach intended destinations. | Not run | Not run |
-| T13 | Joke demo | Cycle to Joke Reader; request a joke; repeat offline. | Setup and punchline appear with no download option; failure gives retry text. | Not run | Not run |
+| T12 | Images and links | Inspect all images; open project links and contact email. | Images load with useful alt text; links reach intended destinations. | Pass (owner tested) | Pass (owner tested) |
+| T13 | Joke demo | Cycle to Joke Reader; request a joke; repeat offline. | Setup and punchline appear with no download option; failure gives retry text. | Pass (owner tested) | Pass (owner tested) |
 | T14 | Console | Load every page and exercise interactions with console open. | No uncaught errors. | Not run | Not run |
 | T15 | Accessibility | Run Lighthouse Accessibility on each of the five pages. | Each page scores at least 90; record actual scores. | Not run | Not run |
 | T16 | Carousel in both themes and sizes | Cycle all cards at 375px and 1366px in light and dark modes. | Arrows, status, cards and focus remain visible without overflow. | Not run | Not run |
@@ -31,7 +31,8 @@ Run browser cases locally by double-clicking index.html and again on the verifie
 - T06 and T07: Owner confirmed theme behavior and saved preferences passed both locally and live. Recorded on 2026-11-05; these are owner-reported manual results.
 - T08 and T09: Owner confirmed carousel initial state and cycling in both directions passed locally and live. Recorded on 2026-11-05; these are owner-reported manual results.
 - T10 and T11: Owner confirmed carousel keyboard accessibility and navigation/content without JavaScript passed both locally and live. Recorded on 2026-11-05; these are owner-reported manual results.
-- T12 through T16 remain Not run. No connected browser was available for agent testing. No Lighthouse scores claimed.
+- T12 and T13: Owner confirmed images and links, plus joke demo success, failure, and recovery behavior passed both locally and live. Recorded on 2026-11-05; these are owner-reported manual results.
+- T14 through T16 remain Not run. No connected browser was available for agent testing. No Lighthouse scores claimed.
 
 Record initial browser failures, fixes, and retest results here when those checks are run.
 
