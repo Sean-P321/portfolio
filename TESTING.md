@@ -18,7 +18,7 @@ Run browser cases locally by double-clicking index.html and again on the verifie
 | T12 | Images and links | Inspect all images; open project links and contact email. | Images load with useful alt text; links reach intended destinations. | Pass (owner tested) | Pass (owner tested) |
 | T13 | Joke demo | Cycle to Joke Reader; request a joke; repeat offline. | Setup and punchline appear with no download option; failure gives retry text. | Pass (owner tested) | Pass (owner tested) |
 | T14 | Console | Load every page and exercise interactions with console open. | No uncaught errors. | Pass (owner tested) | Pass (owner tested) |
-| T15 | Accessibility | Run Lighthouse Accessibility on each of the five pages. | Each page scores at least 90; record actual scores. | N/A (owner requested) | Pass (owner reported; scores not provided) |
+| T15 | Accessibility | Run Lighthouse Accessibility on each of the five pages. | Each page scores at least 90; record actual scores. | N/A (owner requested) | Pass: 100 on all five pages (owner reported) |
 | T16 | Carousel in both themes and sizes | Cycle all cards at 375px and 1366px in light and dark modes. | Arrows, status, cards and focus remain visible without overflow. | Pass (owner tested) | Pass (owner tested) |
 
 ## Checks performed on 2026-11-05
@@ -34,7 +34,17 @@ Run browser cases locally by double-clicking index.html and again on the verifie
 - T12 and T13: Owner confirmed images and links, plus joke demo success, failure, and recovery behavior passed both locally and live. Recorded on 2026-11-05; these are owner-reported manual results.
 - T16: Owner confirmed all carousel cards at phone and laptop widths in both themes passed locally and live. Recorded on 2026-11-05; these are owner-reported manual results.
 - T14: Owner reported no console errors while checking pages and interactions locally and live. Recorded on 2026-11-05; these are owner-reported manual results.
-- T15: Owner requested local N/A and reported live Pass. Recorded on 2026-11-05. Local Lighthouse was not run; N/A is an owner-requested exception to the local test requirement. Individual page scores and reports were not provided and have not been independently verified. No numeric Lighthouse scores claimed.
+- T15: Owner reported a live Lighthouse Accessibility score of 100 for each of the five pages; individual scores are recorded below. Recorded on 2026-11-05. Local Lighthouse was not run; N/A is an owner-requested exception to the local test requirement. Results are owner-reported, not independently run by the agent.
+
+### T15 live Lighthouse Accessibility scores
+
+| Page | File | Live score (owner reported) | Local |
+| --- | --- | --- | --- |
+| Home | index.html | 100 | N/A |
+| About | about.html | 100 | N/A |
+| Projects | projects.html | 100 | N/A |
+| Skills | skills.html | 100 | N/A |
+| Contact | contact.html | 100 | N/A |
 
 Record initial browser failures, fixes, and retest results here when those checks are run.
 
