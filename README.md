@@ -1,9 +1,9 @@
 # portfolio
 First SDET101 Project
 
-Sean Persicano's personal portfolio, built with plain HTML, CSS, and JavaScript.
+My personal portfolio, built with plain HTML, CSS, and JavaScript.
 
-Live site: [Sean Persicano's portfolio](https://sean-p321.github.io/portfolio/)
+Live site: [My portfolio](https://sean-p321.github.io/portfolio/)
 
 ## View locally
 Download or clone this repository and double-click `index.html`. No installation or build step is required.
@@ -25,8 +25,8 @@ All project images are stored in `images/`:
 
 | Asset | Used for | Source |
 | --- | --- | --- |
-| [first-website-banner.png](images/first-website-banner.png) | Favorite Websites project banner | Copied from Sean's original NJIT-hosted class website. |
-| [currencyExchange.png](images/currencyExchange.png) | Currency Exchange Rates notebook output showing an AUD-to-USD conversion and successful database insertion | Screenshot supplied by Sean. |
-| [joke.png](images/joke.png) | Random Joke Reader notebook output showing a joke setup and punchline | Screenshot supplied by Sean. |
+| [first-website-banner.png](images/first-website-banner.png) | Favorite Websites project banner | Copied from my original NJIT-hosted class website. |
+| [currencyExchange.png](images/currencyExchange.png) | Currency Exchange Rates notebook output showing an AUD-to-USD conversion and successful database insertion | Screenshot supplied by me. |
+| [joke.png](images/joke.png) | Random Joke Reader notebook output showing a joke setup and punchline | Screenshot supplied by me. |
 
 The live URL was verified on November 5, 2026: HTTP 200 with the page title "Sean Persicano | Personal Portfolio".
