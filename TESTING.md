@@ -5,10 +5,10 @@ Run browser cases locally by double-clicking index.html and again on the verifie
 | ID | What is tested | Steps | Expected result | Local actual | Live actual |
 | --- | --- | --- | --- | --- | --- |
 | T01 | Navigation on every page | On each of the five pages, click every main navigation link. | All five destinations open correctly from every page. | Pass (owner tested) | Pass (owner tested) |
-| T02 | Phone layout on every page | Open every page at 375px width and inspect all content. | Readable single-column layout without sideways scrolling. | Not run | Not run |
-| T03 | Laptop layout on every page | Open every page at 1366px width and inspect all content. | Clear navigation, readable spacing, and intact cards. | Not run | Not run |
-| T04 | Keyboard on every page | Use Tab, Shift+Tab, and Enter through each page, including the skip link. | Visible focus, logical order, working links, no traps. | Not run | Not run |
-| T05 | Mobile menu | At phone width, open and close Menu; press Escape; resize to laptop. | Menu and aria-expanded stay synchronized; Escape returns focus. | Not run | Not run |
+| T02 | Phone layout on every page | Open every page at 375px width and inspect all content. | Readable single-column layout without sideways scrolling. | Pass (owner tested) | Pass (owner tested) |
+| T03 | Laptop layout on every page | Open every page at 1366px width and inspect all content. | Clear navigation, readable spacing, and intact cards. | Pass (owner tested) | Pass (owner tested) |
+| T04 | Keyboard on every page | Use Tab, Shift+Tab, and Enter through each page, including the skip link. | Visible focus, logical order, working links, no traps. | Pass (owner tested) | Pass (owner tested) |
+| T05 | Mobile menu | At phone width, open and close Menu; press Escape; resize to laptop. | Menu and aria-expanded stay synchronized; Escape returns focus. | Pass (owner tested) | Pass (owner tested) |
 | T06 | Theme | With no saved preference, load each page; toggle theme with keyboard. | Dark default, both themes readable, aria-pressed synchronized. | Not run | Not run |
 | T07 | Theme storage | Save light mode, reload, then visit another page; repeat with storage blocked. | Preference persists when available; blocked storage causes no error. | Not run | Not run |
 | T08 | Carousel initial state | Open Projects with JavaScript enabled. | Only first project is visible; status says 1 of 3 with its title. | Not run | Not run |
@@ -27,7 +27,8 @@ Run browser cases locally by double-clicking index.html and again on the verifie
 - Pass: Executed the carousel code with DOM stubs: first slide, full forward cycle, wrap in both directions, matching status text, one visible card, and revealed controls. This checks logic only, not browser behavior or accessibility.
 - Pass: git diff --check found no whitespace errors.
 - T01: Owner confirmed all five navigation links on each of the five pages passed both locally and live. Recorded on 2026-11-05; these are owner-reported manual results, not agent-run browser checks.
-- Remaining browser, keyboard, phone/laptop, console, and Lighthouse checks: Not run. No connected browser was available for agent testing. No Lighthouse scores claimed.
+- T02–T05: Owner confirmed phone and laptop layouts, keyboard navigation on every page, and mobile menu behavior passed both locally and live. Recorded on 2026-11-05; these are owner-reported manual results.
+- T06–T16 remain Not run. No connected browser was available for agent testing. No Lighthouse scores claimed.
 
 Record initial browser failures, fixes, and retest results here when those checks are run.
 
