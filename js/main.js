@@ -100,19 +100,12 @@ const jokeButton = document.querySelector('#joke-button');
 if (jokeButton) {
   const setup = document.querySelector('#joke-setup');
   const punchline = document.querySelector('#joke-punchline');
-  const download = document.querySelector('#joke-download');
-  let downloadUrl;
   jokeButton.hidden = false;
 
   jokeButton.addEventListener('click', async () => {
     jokeButton.disabled = true;
     setup.textContent = 'Loading a joke...';
     punchline.textContent = '';
-    download.hidden = true;
-    if (downloadUrl) {
-      URL.revokeObjectURL(downloadUrl);
-      downloadUrl = null;
-    }
 
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 10000);
@@ -131,10 +124,6 @@ if (jokeButton) {
       // Treat API content as text, never HTML.
       setup.textContent = joke.setup;
       punchline.textContent = joke.punchline;
-      const file = new Blob([`${joke.setup}\n${joke.punchline}\n`], { type: 'text/plain;charset=utf-8' });
-      downloadUrl = URL.createObjectURL(file);
-      download.href = downloadUrl;
-      download.hidden = false;
     } catch (error) {
       setup.textContent = 'Could not load a joke. Please try again.';
       punchline.textContent = '';

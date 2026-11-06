@@ -16,7 +16,7 @@ Run browser cases locally by double-clicking index.html and again on the verifie
 | T10 | Carousel keyboard and accessibility | Tab to both arrows; use Enter and Space; inspect focus and screen-reader status. | Buttons retain focus; hidden project links are skipped; current title is announced. | Not run | Not run |
 | T11 | No JavaScript | Disable JavaScript and reload every page. | Navigation remains usable; all three projects appear; carousel buttons are hidden. | Not run | Not run |
 | T12 | Images and links | Inspect all images; open project links and contact email. | Images load with useful alt text; links reach intended destinations. | Not run | Not run |
-| T13 | Joke demo | Cycle to Joke Reader; request and download a joke; repeat offline. | Setup and punchline appear; download matches; failure gives retry text. | Not run | Not run |
+| T13 | Joke demo | Cycle to Joke Reader; request a joke; repeat offline. | Setup and punchline appear with no download option; failure gives retry text. | Not run | Not run |
 | T14 | Console | Load every page and exercise interactions with console open. | No uncaught errors. | Not run | Not run |
 | T15 | Accessibility | Run Lighthouse Accessibility on each of the five pages. | Each page scores at least 90; record actual scores. | Not run | Not run |
 | T16 | Carousel in both themes and sizes | Cycle all cards at 375px and 1366px in light and dark modes. | Arrows, status, cards and focus remain visible without overflow. | Not run | Not run |
@@ -36,3 +36,9 @@ Record initial browser failures, fixes, and retest results here when those check
 - Pass: Inspected the supplied screenshot and confirmed its file size is 44,044 bytes (under 500 KB).
 - Pass: Source review confirms the relative image path appears after the project description and before its notebook link, with meaningful alt text and the existing responsive project-image class.
 - Phone/laptop layout and keyboard checks after this update: Not run; no connected browser was available. T01's owner-reported results above predate this image update.
+
+## Random Joke Reader image update (2026-11-05)
+
+- Pass: Inspected joke.png and confirmed its file size is 23,079 bytes (under 500 KB).
+- Pass: Source review confirms the relative image path is after the description and before the notebook link, with descriptive alt text and the existing responsive project-image class.
+- Phone/laptop layout and keyboard checks after this update: Not run; no connected browser was available.
