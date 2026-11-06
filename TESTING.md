@@ -13,8 +13,8 @@ Run browser cases locally by double-clicking index.html and again on the verifie
 | T07 | Theme storage | Save light mode, reload, then visit another page; repeat with storage blocked. | Preference persists when available; blocked storage causes no error. | Pass (owner tested) | Pass (owner tested) |
 | T08 | Carousel initial state | Open Projects with JavaScript enabled. | Only first project is visible; status says 1 of 3 with its title. | Pass (owner tested) | Pass (owner tested) |
 | T09 | Carousel cycling | Click right three times, then left from first project. | Forward cycle returns to first; left from first shows third; titles update. | Pass (owner tested) | Pass (owner tested) |
-| T10 | Carousel keyboard and accessibility | Tab to both arrows; use Enter and Space; inspect focus and screen-reader status. | Buttons retain focus; hidden project links are skipped; current title is announced. | Not run | Not run |
-| T11 | No JavaScript | Disable JavaScript and reload every page. | Navigation remains usable; all three projects appear; carousel buttons are hidden. | Not run | Not run |
+| T10 | Carousel keyboard and accessibility | Tab to both arrows; use Enter and Space; inspect focus and screen-reader status. | Buttons retain focus; hidden project links are skipped; current title is announced. | Pass (owner tested) | Pass (owner tested) |
+| T11 | No JavaScript | Disable JavaScript and reload every page. | Navigation remains usable; all three projects appear; carousel buttons are hidden. | Pass (owner tested) | Pass (owner tested) |
 | T12 | Images and links | Inspect all images; open project links and contact email. | Images load with useful alt text; links reach intended destinations. | Not run | Not run |
 | T13 | Joke demo | Cycle to Joke Reader; request a joke; repeat offline. | Setup and punchline appear with no download option; failure gives retry text. | Not run | Not run |
 | T14 | Console | Load every page and exercise interactions with console open. | No uncaught errors. | Not run | Not run |
@@ -30,7 +30,8 @@ Run browser cases locally by double-clicking index.html and again on the verifie
 - T02–T05: Owner confirmed phone and laptop layouts, keyboard navigation on every page, and mobile menu behavior passed both locally and live. Recorded on 2026-11-05; these are owner-reported manual results.
 - T06 and T07: Owner confirmed theme behavior and saved preferences passed both locally and live. Recorded on 2026-11-05; these are owner-reported manual results.
 - T08 and T09: Owner confirmed carousel initial state and cycling in both directions passed locally and live. Recorded on 2026-11-05; these are owner-reported manual results.
-- T10 through T16 remain Not run. No connected browser was available for agent testing. No Lighthouse scores claimed.
+- T10 and T11: Owner confirmed carousel keyboard accessibility and navigation/content without JavaScript passed both locally and live. Recorded on 2026-11-05; these are owner-reported manual results.
+- T12 through T16 remain Not run. No connected browser was available for agent testing. No Lighthouse scores claimed.
 
 Record initial browser failures, fixes, and retest results here when those checks are run.
 
